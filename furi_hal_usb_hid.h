@@ -1,5 +1,13 @@
 #pragma once
+#include "hid_usage_desktop.h"
+#include "hid_usage_button.h"
+#include "hid_usage_keyboard.h"
+#include "hid_usage_consumer.h"
+#include "hid_usage_led.h"
 
+#define HID_KEYBOARD_NONE 0x00
+// Remapping the colon key which is shift + ; to comma
+#define HID_KEYBOARD_COMMA HID_KEYBOARD_COLON
 /** HID keyboard key codes */
 enum HidKeyboardKeys {
     KEY_NONE = 0x00,
